@@ -1812,8 +1812,6 @@ class FileUploadWidget(Widget):
     readonly_template = "readonly/file_upload"
     accept = None
 
-    requirements = ({"js": "deform:static/scripts/file_upload.js"},)
-
     _pstruct_schema = SchemaNode(
         Mapping(),
         SchemaNode(_FieldStorage(), name="upload", missing=None),

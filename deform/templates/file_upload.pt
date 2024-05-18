@@ -11,9 +11,4 @@
          tal:condition="uid"
          type="hidden" name="uid" value="${uid}"/>
   ${field.end_mapping()}
-  <script type="text/javascript">
-    deform.addCallback('${oid}', function (oid) {
-      $('#' + oid).upload();
-    });
-  </script>
 </tal:block>
